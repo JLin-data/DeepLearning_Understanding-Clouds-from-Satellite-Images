@@ -17,3 +17,19 @@ The dataset includes 22184 satellite images of 1400 x 2100 px that contain certa
 
 [documentName](document link)
 
+## Method
+Mask R-CNN models replace the RoI pooling layer with an RoI alignment layer. This allows the use of bilinear interpolation to retain spatial information on feature maps, making Mask R-CNN better suited for pixel-level predictions.
+Mask R-CNN not only predicts the categories and bounding boxes of RoIs, but also allows us to use an additional fully convolutional network to predict the pixel-level positions of objects.
+
+Unlike Mask RCNN,  UNet can produce only one mask. Unet contains two paths. First path is the contraction path (also called as the encoder) which is used to capture the context in the image. The encoder is stack of convolutional and max pooling layers. The second path is decoder)which is used to enable precise localization using transposed convolutions.
+
+
+## Challenge and Solution
+Challenge:
+Our challenge in this project is to detect the where the cloud is, and then to classify the type of cloud.
+Clouds are sparse and it is hard to determine the bound of clouds.
+
+Solution:
+Instant segmentation on COCO dataset (COCO is a large-scale object detection, segmentation, and captioning dataset.)
+
+
