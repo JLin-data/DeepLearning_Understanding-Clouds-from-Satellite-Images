@@ -15,7 +15,7 @@ The dataset includes 22184 satellite images of 1400 x 2100 px that contain certa
 
 ## Write-up
 
-[documentName](document link)
+[Writeup](https://github.com/JJJJJingL/DeepLearning_Understanding-Clouds-from-Satellite-Images/blob/master/ANLY-590%20Writeup.pdf)
 
 ## Method
 Mask R-CNN models replace the RoI pooling layer with an RoI alignment layer. This allows the use of bilinear interpolation to retain spatial information on feature maps, making Mask R-CNN better suited for pixel-level predictions.
@@ -31,5 +31,8 @@ Clouds are sparse and it is hard to determine the bound of clouds.
 
 Solution:
 Instant segmentation on COCO dataset (COCO is a large-scale object detection, segmentation, and captioning dataset.)
+
+## Poster
+![picture alt](https://github.com/JJJJJingL/DeepLearning_Understanding-Clouds-from-Satellite-Images/blob/master/590%20poster.pptx.jpg "Poster")
 
 
